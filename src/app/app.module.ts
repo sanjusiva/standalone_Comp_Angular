@@ -1,18 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { ProductComponent } from './product/product.component';
+import { HomeComponent } from './admin/home/home.component';
+import { UserComponent } from './admin/user/user.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    // AppComponent,
+    // HomeComponent,
+    // UserComponent       //should not include standalone components in declarations of NgModule
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    LoginComponent,
+    ProductComponent,
+    HomeComponent,
+    UserComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    // AppComponent
+  ]
 })
 export class AppModule { }
