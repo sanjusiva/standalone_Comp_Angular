@@ -11,6 +11,7 @@ import { LoginComponent } from '../login/login.component';
 })
 export class ProductComponent implements OnInit {
 
+  title='product'
   constructor() { }
 
   ngOnInit(): void {
